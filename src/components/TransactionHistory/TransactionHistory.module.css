@@ -1,0 +1,31 @@
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+.thead {
+  color: #f0f0f0;
+  background-color: #3e3e3e;
+}
+.tr {
+  padding: 10px;
+  /* border: 1px solid #000; */
+}
+.td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+.td:nth-child(1) {
+  width: 200px;
+}
+.td:nth-child(2) {
+  width: 100px;
+}
+.td:nth-child(3) {
+  width: 100px;
+}
+.even {
+  background-color: #b2b1b1;
+}
