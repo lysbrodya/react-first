@@ -1,6 +1,7 @@
 import css from "./TransactionHistory.module.css";
 import React from "react";
-// import clsx from "clsx";
+import clsx from "clsx";
+const firstLatter = clsx(css.firstLatter, css.td);
 export default function TransactionHistory({ items }) {
   return (
     <table className={css.transactionHistory}>
@@ -17,7 +18,7 @@ export default function TransactionHistory({ items }) {
           // const bgColor = clsx(css.td, index % 2 !== 0 && css.even);
           return (
             <tr key={id} className={css.bgColor}>
-              <td className={(css.firstLatter, css.td)}>{type}</td>
+              <td className={firstLatter}>{type}</td>
               <td className={css.td}>{amount}</td>
               <td className={css.td}>{currency}</td>
             </tr>
